@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Hero, Navbar, Participate, Partner, About } from "./components";
+import { Hero, Navbar, Participate, Partner, About } from "./components/Index";
 import { styles } from "./styles";
 
 const App = () => {
