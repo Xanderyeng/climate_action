@@ -1,5 +1,4 @@
 import React from "react";
-import { participate } from "../assets";
 import { styles } from "../styles";
 
 const Participate = () => {
