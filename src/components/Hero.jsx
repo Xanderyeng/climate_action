@@ -85,73 +85,21 @@ const Hero = () => {
       <div
         className={` ${styles.paddingX} relative w-full flex flex-row items-center justify-center`}
       >
-        <span className="text-center">
+        <span className='text-center'>
           {/* H.E. William Ruto, 
 the President of the Republic of Kenya, & Chair of the Committee of African Heads of State & Government
 on Climate Change  */}
           <p className='text-[28px] font-normal'>H.E. William Ruto&#44;</p>
           <p>
-            the President of the Republic of Kenya, & Chair of the
+            the President of the Republic of Kenya&#44; &amp; Chair of the
             <br className='sm:block hidden' />
-            Committee of African Heads of State & Government
+            Committee of African Heads of State &amp; Government
             <br className='sm:block hidden' />
-            on Climate Change
+            <p className='pt-4'>on Climate Change</p>
           </p>
         </span>
         <img src={the_president} alt='President' className='w-[25vw]' />
       </div>
-
-      {/* "Welcome to the first-ever Climate Action Summit! This global gathering is dedicated to rallying the world to take urgent action on the climate crisis. Our focus is on the opportunities that Africa presents for achieving global net zero. Join us in shaping a sustainable future for all." */}
-
-      {/* TEXT CARD */}
-
-      {/* <div className='relative p-[3.2rem]'>
-          <div className=' absolute bottom-0 left-0'>
-            <img src={left} className='w-[45px] ' />
-          </div>
-          <div className='absolute top-0 right-0'>
-            <img src={right} className='w-[52px] ' />
-          </div>
-
-          <div className='flex flex-col items-center justify-center text-center '>
-            <p
-              className={`${styles.heroSubText} font-extralight font-poppins mt-2 text-white-100`}
-            >
-              "&nbsp;Shaping the Future
-              <br className='sm:block hidden' />
-              of Climate Solutions
-              <br className='sm:block hidden' />
-              and Innovations in
-              <br className='sm:block hidden' />
-              Africa&nbsp;"
-            </p>
-          </div>
-        </div> */}
-
-      {/* TEXT CARD */}
-
-      {/* <div className='relative p-[3.2rem]'>
-          <div className=' absolute bottom-0 left-0'>
-            <img src={left} className='w-[45px] ' />
-          </div>
-          <div className='absolute top-0 right-0'>
-            <img src={right} className='w-[52px] ' />
-          </div>
-
-          <div className='flex flex-col items-center justify-center text-center '>
-            <p
-              className={`${styles.heroSubText} font-extralight font-poppins mt-2 text-white-100`}
-            >
-              "&nbsp;Shaping the Future
-              <br className='sm:block hidden' />
-              of Climate Solutions
-              <br className='sm:block hidden' />
-              and Innovations in
-              <br className='sm:block hidden' />
-              Africa&nbsp;"
-            </p>
-          </div>
-        </div> */}
     </section>
   );
 };

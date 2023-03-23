@@ -16,6 +16,7 @@
 html,
 body {
   background: #fff;
+  overflow-x: hidden;
 }
 
 .App{
@@ -25,8 +26,13 @@ body {
 
 .bg-gradient-mask {
   background: linear-gradient(360deg, #ffffff00 0%, rgba(0, 0, 0, 0.438) 84.8%);
-  /* background-repeat: no-repeat; */
   /* background-size: 100%; */
+}
+
+.sectionBg{
+  background-image: url('./assets/participate_trimmed.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-overlay-mask {
@@ -50,23 +56,22 @@ body {
   background-size: cover;
 }
 
-.multi-bg-2{
+/* .multi-bg-2{
   background-image: url('/src/assets/world-map-africa.svg');
   background-color: rgba(0, 117, 73, 1);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  /* background: transparent; */
-}
+} */
 
-.multi-bg-3{
+/* .multi-bg-3{
   background-image:  url('/src/assets/windvanes.jpg');
   background-color: linear-gradient(360deg, #ffffffea 0%, rgba(0, 0, 0, 0) 64.8%);
   background-blend-mode: normal;
   background-repeat: no-repeat;
   background-size: 100%;
-}
+} */
 
 .element-bg {
   background: rgba(226, 226, 226, 1);

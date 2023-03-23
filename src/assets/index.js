@@ -7,6 +7,7 @@ import the_president from "./president-ruto.png";
 import backdrop from './custom-bg.png'
 import left from "./left.svg"
 import right from "./right.svg"
+import participate from './participate_trimmed.png'
 
 export {
   coat_of_arms,
@@ -17,5 +18,6 @@ export {
   the_president,
   backdrop,
   left,
-  right
+  right,
+  participate
 };
