@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #fff;
+}
+
+.App{
+  height: 100vh;
+  position: relative;
+}
+
+.bg-gradient-mask {
+  background: linear-gradient(360deg, #ffffff00 0%, rgba(0, 0, 0, 0.438) 84.8%);
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+}
+
+.bg-overlay-mask {
+  
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 117, 73, 1) 64.8%), url("/src/assets/world-map-africa.svg"); */
+  background-color: rgba(0, 117, 73, 1);
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* opacity: 1; */
+  background-blend-mode: multiply;
+}
+
+/* THIS WORKS EXACTLY AS IN THE FIGMA -> PROBLEM IS, THE WORLD MAP IS AT THE TOP MOST */
+
+.multi-bg {
+  /* background-image: url('/src/assets/world-map-africa.svg'), url('/src/assets/windvanes.jpg'); */
+  background-image: url('/src/assets/backdrop.svg');
+  /* background-color: rgba(0, 117, 73, 1); */
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+}
+
+.multi-bg-2{
+  background-image: url('/src/assets/world-map-africa.svg');
+  background-color: rgba(0, 117, 73, 1);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  /* background: transparent; */
+}
+
+.multi-bg-3{
+  background-image:  url('/src/assets/windvanes.jpg');
+  background-color: linear-gradient(360deg, #ffffffea 0%, rgba(0, 0, 0, 0) 64.8%);
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.element-bg {
+  background: rgba(226, 226, 226, 1);
+}
+
+ul li a {
+  transition: all ease-in 0.3s;
+}
+ul li a:hover {
+  transform: translateY(5px);
+}
+
+.hamburger-react {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: none;
+}
+
+@media (max-width: 59em) {
+  .hamburger-react {
+    display: block;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .nav-item {
+    font-size: 4.8rem;
+  }
+  .navbar-menu {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    /* overflow-x: hidden; */
+    transition: all ease-in 0.8s;
+
+    /* Hide the Navigation*/
+
+    /* display: none; -- This allows no Navigation at all */
+
+    /* Hide the Element visually */
+    opacity: 0;
+
+    /* Make it in accessible to Mouse and Keyboards */
+    pointer-events: none;
+
+    /* Hide it from screen readers*/
+    visibility: hidden;
+  }
+
+  .open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: Auto;
+    transform: translateX(0);
+
+    /* z-index: 10; */
+    /* transform: translateX(100%); */
+  }
+
+  .close {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+  }
+}
